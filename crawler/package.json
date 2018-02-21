@@ -1,0 +1,16 @@
+{
+    "name": "weather crawler",
+    "version": "0.0.0",
+    "description": "crawler for wheather data",
+    "main": "crawler.js",
+    "author": "Yossi Efraim",
+    "license": "",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "cheerio": "^0.22.0",
+        "express": "^4.16.2",
+        "request": "^2.83.0",
+        "request-promise": "^4.2.2",
+        "url-parse": "^1.2.0"
+    }
+}

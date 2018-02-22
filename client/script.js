@@ -7,6 +7,7 @@ $(document).ready(function(){
                 city: "tel aviv"
             },
             function(data,status){
+                console.log(data);
 
                 $(`.jumbotron>h2`).html("Current Weather in "+ data.city);
 
@@ -23,10 +24,8 @@ $(document).ready(function(){
                 for(let i = 0;i<6;i++){
                     $(`.card.h-100.${i}>a>.card-img-top`).attr("src",`img/${data.icon[i]}.svg`);
                     $(`.card.h-100.${i}>.card-body>.card-title`).html(data.days[i]);
-                    $(`.card.h-100.${i}>.card-body>.card-text.day`).html("Day Temp is " + data.dayTemp[i]+ "<br>");
-                    $(`.card.h-100.${i}>.card-body>.card-text.night`).html("Night Temp is " + data.nightTemp[i]+"<br");
-                    $(`.card.h-100.${i}>.card-body>.card-text.Wind`).html("Wind "+ data.averageWind[i]+" (mph)<br>");
-                    $(`.card.h-100.${i}>.card-body>.card-text.Humidity`).html("Humidity "+ data.averageHumidity[i]+"<br>");
+                    $(`.card.h-100.${i}>.card-body>.card-text.day`).html("Day Temp is " + data.dayTemp[i]);
+                    $(`.card.h-100.${i}>.card-body>.card-text.night`).html("Night Temp is " + data.nightTemp[i] + "</p><p> Wind average"+ data.averageWind[i]+" (mph)</p><p>"+"Humidity average "+ data.averageHumidity[i]);
                  }
             
              });
@@ -49,9 +48,8 @@ $(document).ready(function(){
                     $(`.card.h-100.${i}>a>.card-img-top`).attr("src",`img/${data.icon[i]}.svg`);
                     $(`.card.h-100.${i}>.card-body>.card-title`).html(data.days[i]);
                     $(`.card.h-100.${i}>.card-body>.card-text.day`).html("Day Temp is " + data.dayTemp[i]+ "<br>");
-                    $(`.card.h-100.${i}>.card-body>.card-text.night`).html("Night Temp is " + data.nightTemp[i]+"<br");
-                    $(`.card.h-100.${i}>.card-body>.card-text.Wind`).html("Wind "+ data.averageWind[i]+" (mph)<br>");
-                    $(`.card.h-100.${i}>.card-body>.card-text.Humidity`).html("Humidity "+ data.averageHumidity[i]+"<br>");
+                    $(`.card.h-100.${i}>.card-body>.card-text.night`).html("Night Temp is " + data.nightTemp[i] + "</p><p> Wind average"+ data.averageWind[i]+" (mph)</p><p>"+"Humidity average "+ data.averageHumidity[i]);
+
                  }
             
              });
@@ -75,9 +73,8 @@ $(document).ready(function(){
                     $(`.card.h-100.${i}>a>.card-img-top`).attr("src",`img/${data.icon[i]}.svg`);
                     $(`.card.h-100.${i}>.card-body>.card-title`).html(data.days[i]);
                     $(`.card.h-100.${i}>.card-body>.card-text.day`).html("Day Temp is " + data.dayTemp[i]+ "<br>");
-                    $(`.card.h-100.${i}>.card-body>.card-text.night`).html("Night Temp is " + data.nightTemp[i]+"<br");
-                    $(`.card.h-100.${i}>.card-body>.card-text.Wind`).html("Wind "+ data.averageWind[i]+" (mph)<br>");
-                    $(`.card.h-100.${i}>.card-body>.card-text.Humidity`).html("Humidity "+ data.averageHumidity[i]+"<br>");
+                    $(`.card.h-100.${i}>.card-body>.card-text.night`).html("Night Temp is " + data.nightTemp[i] + "</p><p> Wind average"+ data.averageWind[i]+" (mph)</p><p>"+"Humidity average "+ data.averageHumidity[i]);
+
                  }
             
              });
@@ -107,9 +104,8 @@ $(document).ready(function(){
                     $(`.card.h-100.${i}>a>.card-img-top`).attr("src",`img/${data.icon[i]}.svg`);
                     $(`.card.h-100.${i}>.card-body>.card-title`).html(data.days[i]);
                     $(`.card.h-100.${i}>.card-body>.card-text.day`).html("Day Temp is " + data.dayTemp[i]+ "<br>");
-                    $(`.card.h-100.${i}>.card-body>.card-text.night`).html("Night Temp is " + data.nightTemp[i]+"<br");
-                    $(`.card.h-100.${i}>.card-body>.card-text.Wind`).html("Wind "+ data.averageWind[i]+" (mph)<br>");
-                    $(`.card.h-100.${i}>.card-body>.card-text.Humidity`).html("Humidity "+ data.averageHumidity[i]+"<br>");
+                    $(`.card.h-100.${i}>.card-body>.card-text.night`).html("Night Temp is " + data.nightTemp[i] + "</p><p> Wind average"+ data.averageWind[i]+" (mph)</p><p>"+"Humidity average "+ data.averageHumidity[i]);
+
                  }
             
              });
